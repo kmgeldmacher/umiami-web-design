@@ -26,7 +26,7 @@
 
 
 ## Multimedia Editors
-- Adobe [Creative Suite](http://www.adobe.com/products/cs6.html?promoid=KFHNH) | [Creative Cloud](http://www.adobe.com/products/creativecloud.html?promoid=JQPER)
+- Adobe [Creative Suite](http://www.adobe.com/products/catalog/cs6._sl_id-contentfilter_sl_catalog_sl_education_sl_creativesuite6.edu.html) | [Creative Cloud](http://www.adobe.com/products/creativecloud.edu.html)
 
 
 ## File Transfer Protocol (FTP) client
