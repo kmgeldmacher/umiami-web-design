@@ -32,3 +32,8 @@
 ## File Transfer Protocol (FTP) client
 - [Cyberduck](http://cyberduck.io/)
 - [Fetch](http://fetchsoftworks.com/fetch/free)
+
+
+## Validtors
+- [W3C HTML Validator](http://validator.w3.org/)
+- [W3C CSS Validator](http://jigsaw.w3.org/css-validator/)
