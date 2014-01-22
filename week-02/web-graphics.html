@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web Graphics</title>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Web Graphics</h1>
+    </header>
+
+    <section>
+      <h2>Types of Graphics</h2>
+
+      <h3>Raster</h3>
+      <ul>
+        <li>grid of pixels</li>
+        <li>cannot scale up</li>
+      </ul>
+
+      <h3>Vector</h3>
+      <ul>
+        <li>points, lines, curves, shapes</li>
+        <li>can be scaled up</li>
+      </ul> 
+    </section>
+
+    <section>
+      <h2>Compression</h2>
+      <ul>
+        <li>necesssary for images, multimedia</li>
+        <li>data encoding disgards information</li>
+        <li>allows file size to be smaller</li>
+        <li>compression &raquo; data loss &raquo; loss of quality &raquo; smaller file size</li>
+      </ul>
+
+      <h3>Lossy vs. Lossless</h3>
+      <ul>
+        <li>lossy: file loses data in compression</li>
+        <li>lossless: no data loss in compression</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Formats</h2>
+
+      <h3>GIF: Graphics Interchange Format</h3>
+      <ul>
+        <li>.gif</li>
+        <li>limited to a palette of 256 colors</li>
+        <li>good for low-color, graphics such as logos</li>
+        <li>small animations, transparency</li>
+      </ul>
+
+      <h3>PNG: Portable Network Graphics</h3>
+      <ul>
+        <li>.png</li>
+        <li>a replacement for GIFs (PNG-8)</li>
+        <li>color palate, transparency options (PNG-24)</li>
+        <li>supported in all OSes, modern browsers</li>
+        <li>smoother (anti-aliased) graphics, no animation</li>
+      </ul>
+
+      <h3>JPEG: Joint Photographic Experts Group</h3>
+      <ul>
+        <li>.jpg</li>
+        <li>millions (billions?) of colors</li>
+        <li>used for photography</li>
+        <li>compression may leave 'artifacts'</li>
+        <li>progressive: photo displays portions of image over time</li>
+        <li>maximum size: 65535 pixels by 65535 pixels</li>
+      </ul>
+
+      <h3>SVG: Scalable Vector Graphics</h3>
+      <ul>
+        <li>.svg</li>
+        <li>vector image format</li>
+        <li>behaviors described in XML</li>
+        <li>supported by all major browsers since 2011</li>
+        <li>not yet fully adopted</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Adobe Photoshop</h2>
+      <ul>
+        <li>used to edit raster images</li>
+        <li>File &raquo; <a href="http://tv.adobe.com/watch/understanding-adobe-photoshop-cs6/save-for-web/" title="Save for Web">Save for Web &amp; Devices</a></li>
+        <li>allows you to save a raster image in raster format (GIF, JPEG, PNG)</li>
+      </ul>
+
+      <h2>Adobe Illustrator</h2>
+      <ul>
+        <li>used to edit vector images</li>
+        <li>File &raquo; <a href="http://tv.adobe.com/watch/learn-illustrator-cc/saving-artwork-for-the-web/" title="Saving artwork for the Web">Save for Web</a></li>
+        <li>allows you to save a vector image in raster format (GIF, JPEG, PNG)</li>
+        <li>also allows you to save in vector format (SVG)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Tips</h2>
+      <ol>
+        <li>Always retain your original images.
+          <ul>
+            <li>once an image is compressed, its data is lost</li>
+          </ul>
+        </li>
+        <li>Work in RGB format.</li>
+        <li>Check your resolution: 72dpi.
+          <ul>
+            <li>resolution settings are in the Image Size panel</li>
+          </ul>
+        </li>
+        <li>Photos should <em>always</em> be a JPEG.</li>
+        <li>Graphics should <em>always</em> be a GIF or PNG.
+          <ul>
+            <li>preferably a PNG, unless you <em>must</em> support old browsers</li>
+          </ul>
+        </li>
+        <li>Size down, never up.
+          <ul>
+            <li>vector images are the <em>only</em> exception</li>
+          </ul>
+        </li>
+        <li>Do not distort your images with unbalanced proportions.
+          <ul>
+            <li>automatically taken care of in Photoshop (Image Size)</li>
+            <li>make sure "Constrain Proportions" is selected</li>
+          </ul>
+        </li>
+        <li>Always consider size vs. quality
+          <ul>
+            <li>Does your design focus on strong imagery?</li>
+            <li>What considerations are you making for mobile?</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+  </body>
+</html>
