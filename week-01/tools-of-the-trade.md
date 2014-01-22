@@ -11,7 +11,6 @@
 
 ## Text Editor
 - [Sublime Text](http://www.sublimetext.com/)
-- [Brackets](http://brackets.io/)
 
 
 ## Command Line
