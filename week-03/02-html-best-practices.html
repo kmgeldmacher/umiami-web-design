@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML Best Practices</title>
+  </head>
+
+  <body>
+
+    <section>
+      <h1>HTML Best Practices</h1>
+      <p>If you read Zeldman <small>(You did read Zeldman, I hope...)</small> most of this should be familiar.</p>
+    </section>
+
+    <section>
+      <h2>Use the proper DOCTYPE</h2>
+      <p><code>&lt;!DOCTYPE html&gt;</code></p>
+      <p>There are several DOCTYPES, but we'll be using the one that tells the browser our code is written in HTML5.</p>
+    </section>
+
+    <section>
+      <h2>Declare your character set</h2>
+      <p><code>&lt;meta charset="UTF-8"&gt;</code></p>
+      <p>UTF-8 is recognized as a good standard because it contains over 1 million individual characters.</p>
+    </section>
+
+    <section>
+      <h2>Close your tags</h2>
+      <p><strong>Good:</strong> <code>&lt;p&gt;Text&lt;/p&gt;</code></p>
+      <p><strong>Bad:</strong> <code>&lt;p&gt;Text</code></p>
+      <p>There are a few <em>exceptions</em> to this. <code>&lt;br /&gt;</code>, <code>&lt;hr /&gt;</code> and <code>&lt;img /&gt;</code> are among a short list of self-closing tags. Can you name others?</p>
+      <p>This is a good habit to develop before you begin working with CSS and JavaScript.</p>
+    </section>
+
+    <section>
+      <h2>Write your tags (elements, attributes) in lowercase</h2>
+      <p><code>&lt;p class="intro"&gt;Text&lt;/p&gt;</code></p>
+      <p>HTML is not case sensitive, but this is an accepted best practice.</p>
+    </section>
+
+    <section>
+      <h2>Use quotes around attribute values</h2>
+      <p><code>&lt;img alt="Sebastian the Ibis" class="photo" src="photo.jpg" /&gt;</code></p>
+      <p>Another accepted best practice.</p>
+    </section>
+
+    <section>
+      <h2>All attributes should have values</h2>
+      <p><code>&lt;hr noshade="noshade" /&gt;</code></p>
+      <p>Most attributes require a value. Some don't. Again, it's a good habit to develop before you begin working with CSS and JavaScript.</p>
+    </section>
+
+    <section>
+      <h2>Do not use double dashes inside a comment</h2>
+      <p><code>&lt;!-- This is what a comment looks like. --&gt;</code></p>
+      <p><code>&lt;!-- If you must use double dashes, separate them by a space - - like so. --></code></p>
+      <p>Double dashes belong at the <em>beginning</em> and <em>end</em> of a comment. Putting them within a comment will invalidate code.</p>
+    </section>
+
+    <section>
+      <h2>Encode special characters</h2>
+      <p>If you read the source code of this document, you will see funky code that starts with an ampersand (&amp;) and ends with a semicolon (;). These are special characters.</p>
+      <p>Special characters are predominantly used in foreign languages. There are also symbols we can use such as:</p>
+
+      <ul>
+        <li>a double dagger: &Dagger;</li>
+        <li>a spade: &spades;</li>
+        <li>a heart: &hearts;</li>
+        <li>a sterling pound: &pound;</li>
+        <li>a euro: &euro;</li>
+        <li>copyright: &#169;</li>
+      </ul>
+
+      <p><a href="http://webmonkey.com/2010/02/special_characters/">WebMonkey</a> has a cheat sheet, although this is by no means complete.</p>
+    </section>
+
+    <section>
+      <h2>Indent your code, two spaces for each level</h2>
+      <p>HTML is not sensitive to white space. Following this tip will help keep code managable and readable. Spacing between lines of code is a matter of personal preference. Find something that you are comfortable with and remain consistent.</p>
+    </section>
+
+  </body>
+</html>
