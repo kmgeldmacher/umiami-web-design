@@ -1,0 +1,31 @@
+/* 05-div-span styles */
+
+.block, .inline {
+  line-height: 1.5;
+}
+
+.block {
+  background: #f99;
+}
+
+.inline {
+  background: #99f;
+}
+
+
+/* 07-tables styles */
+/* This allows us to see a border around table cells */
+
+table {
+  border-top: 1px solid #222;
+  border-right: 1px solid #222;
+}
+
+th, td {
+  border-bottom: 1px solid #222;
+  border-left: 1px solid #222;
+}
+
+table, th, td {
+  border-collapse: collapse;
+}

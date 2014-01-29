@@ -1,0 +1,43 @@
+/* 06-html-structure styles */
+/* HTML structure is pretty boring by itself... 
+   ...but when you apply styles...! */
+
+header, nav, section, article, aside {
+  margin: 1em;
+  border: 1px solid #333;
+}
+
+header, footer {
+  background: #ddf;
+}
+
+nav {
+  margin: 1em;
+  border: 1px solid #333;
+  background: #dfd;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 2em 0 0;
+}
+
+section {
+  width: 64%;
+  float: left;
+  background: #ddf;
+}
+
+article {
+  background: #dfd;
+}
+
+aside {
+  float: right;
+  width: 30%;
+  background: #fdd;
+}
+
+.clear {
+  clear: both;
+}
