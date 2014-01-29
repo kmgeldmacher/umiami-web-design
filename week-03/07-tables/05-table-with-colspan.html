@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Structured table with colspan</title>
+  </head>
+
+  <body>
+
+    <h1>Structured table with colspan</h1>
+
+    <table>
+      <caption>Universities in Florida</caption>
+      <thead>
+        <tr>
+          <!-- It is okay to leave a data cell empty. -->
+          <!-- Another option is to use a non-breaking space: (&nbsp;) --> 
+          <!-- Example: <th>&nbsp;</th> -->
+          <th></th> 
+          <td>Florida</td>
+          <td>Miami</td>
+          <td>South Florida</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>City</th>
+          <td>Gainesville</td>
+          <td>Coral Gables</td>
+          <td>Tampa</td>
+        </tr>
+        <tr>
+          <th>State</th>
+          <td colspan="3">Florida</td>
+        </tr>
+        <tr>
+          <th>Type</th>
+          <td>Public</td>
+          <td>Private</td>
+          <td>Public</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </body>
+</html>
