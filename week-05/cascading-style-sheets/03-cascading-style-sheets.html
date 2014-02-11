@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cascading Style Sheets</title>
+
+    <style>
+      body {
+        font-family: serif;
+        color: blue;
+      }
+
+      h1, h2, h3, h4 {
+        font-family: sans-serif;
+      }
+
+      p {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <h1>Cascading Style Sheets</h1>
+
+    <!-- this is an example of an inline style ... don't use these! -->
+    <p style="color: purple;">CSS or stylesheets is/are the method used to apply presentational elements to an HTML document.</p>
+
+    <p>This includes: fonts, colors, positioning, decorations, etc.</p>
+
+    <p>As you can see with this page, our body text is styled in a serif font, while headlines are styled in a sans-serif font.</p> 
+
+
+    <h2>Why 'cascading'?</h2>
+
+    <p>Because certain styles applied to a 'parent' element are inherited by 'child' elements.</p>
+
+
+    <h2>How to add styles</h2>
+
+    <p>We can style our document by:</p>
+
+    <ol>
+      <li>adding the <code>style</code> attribute to an element (inline style)</li>
+      <li>adding our styles within <code>&lt;style&gt;&lt;/style&gt;</code> tags between the <code>&lt;head&gt;&lt;/head&gt;</code> tags of our HTML document</li>
+      <li>adding a link to an external style sheet</li>
+    </ol>
+
+
+    <h3>Which way is best?</h3>
+
+    <h4>No. 3!</h4>
+
+    <p>There may be rare cases where you need to use method No. 1 or No. 2. But if you are designing a web site from scratch, <em>always</em> include external stylesheets.</p>
+
+    <p>We do this by adding the following line of code between our <code>&lt;head&gt;&lt;/head&gt;</code> tags:</p>
+
+    <p><code>&lt;link rel="stylesheet" href="css/screen.css" /&gt;</code></p>
+
+    <p><code>&lt;link&gt;</code> defines a relationship between the document and an external resource, in this case, a stylesheet.</p>
+
+    <p><code>rel="stylesheet"</code> tells the browser our external resource is a stylesheet.</p>
+
+    <p><code>href="css/style.css"</code> is the location of our stylesheet (<code>css/style.css</code> is a value that can be changed).</p>
+
+
+    <h3>Why not No. 1 and No. 2?</h3>
+
+    <p>Let's say you maintain a site with 100,000 pages. You apply an inline style to every paragraph tag on a page that uses the font Helvetica. And you include style tags in the head of each page that turns every link green.</p>
+
+    <p>Your boss comes to you and says, "I hate Helvetica! And I hate green!"</p>
+
+    <p>Now imagine you have one external style sheet that looks like this:</p>
+
+    <pre>
+p { 
+  font-family: "Helvetica", sans-serif; 
+}
+
+a {
+  color: green;
+}</pre>
+
+   <p>Isn't it going to be nicer to change two lines of code instead of hunting for each style setting across 100,000 pages?</p>
+
+
+  </body>
+</html>

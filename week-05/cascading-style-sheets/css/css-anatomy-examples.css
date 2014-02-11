@@ -1,0 +1,38 @@
+/* We can use comments in CSS, too. */
+
+/* These are different from HTML comments. We use a slash and 
+   star to begin the comment and a star and slash to end it. As
+   long as those our message is contained within those two items,
+   our comment can span as many lines as we want it to be!
+*/
+
+p { 
+  color: blue; 
+}
+
+/* This looks a little different from how we showed the CSS in the 
+   example. You may see CSS written in different ways. This is because,
+   like HTML, CSS is not whitespace sensitive.
+
+   As you learn CSS, its helpful to keep your code organized. One way 
+   is to place the selector and opening curly bracket on the first 
+   line, indent all declarations on subsequent lines and place the 
+   curly bracket by itself with no indent on the last line of your 
+   CSS block. 
+*/
+
+.box { 
+  background-color: purple; 
+  color: white;
+  height: 100px; 
+  width: 100px;
+}
+
+/* CSS declarations don't need to be listed in a specific order. You
+   can list them alphabetically, by property, or whatever way makes
+   sense to you. 
+*/
+
+div span#first { 
+  font-size: 24px; 
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document Object Model</title>
+  </head>
+
+  <body>
+
+    <section>
+      <h1>Document Object Model</h1>
+      <p>We might describe the DOM as a <em>family tree</em> or <em>tree-like structure</em> for HTML.
+      <p>Elements nested <em>inside</em> elements are 'children.'</p>
+      <p>Elements that <em>wrap</em> elements are 'parents.'</p>
+    </section>
+
+    <section>
+      <h3>Example 1</h3>
+      <p>How might we describe the DOM of the elements (h3, p) in this section?</p>
+      <!-- html > body > section > h3 -->
+      <!-- html > body > section > p -->
+    </section>
+
+    <section>
+      <h3>Example 2</h3>
+      <p>How about the DOM for the elements wrapping the animals below?</p>
+      <ul>
+        <li>Alligator</li>
+        <li>Bat</li>
+        <li>Cat</li>
+        <li>Dog</li>
+      </ul>
+
+      <!-- html > body > section > ul > li -->
+
+      <p><em>HINT:</em> Do you notice how indenting your code helps you find the path of the DOM?</p>
+    </section>
+
+    <section>
+      <h3>Example 3</h3>
+      <p>How about this difficult example?</p>
+      <p>What is the tree of 'Kingdom'? 'Mamalia'? 'Felis catus'?</p>
+
+      <ul>
+        <li><strong>Kingdom:</strong> Anamalia
+          <ul>
+            <li><strong>Phylum:</strong> Chordata
+              <ul>
+                <li><strong>Class:</strong> Mammalia
+                  <ul>
+                    <li><strong>Order:</strong> Carnivora
+                      <ul>
+                        <li><strong>Family:</strong> Felidae
+                          <ul>
+                            <li><strong>Genus:</strong> Felidae
+                              <ul>
+                                <li><strong>Species:</strong> 
+                                  <ul>
+                                    <li>Felis catus (domestic cat)</li>
+                                    <li>Felis silvestris (wildcat)</li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul> <!-- Yikes! -->
+
+      <!-- Kingdom: html > body > section > ul > li > strong -->
+      <!-- Mamalia: html > body > section > ul > li > ul > li > ul > li -->
+      <!-- Felis Catus: html > body > section > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li -->
+      <!-- (That's eight ul > li) -->
+    </section>
+
+    <section>
+      <h2>Inspecting the DOM</h2>
+
+      <p>Google Chrome's Dev Tools has a built-in DOM inspector.</p>
+
+      <p>There are three ways to open the inspector:</p>
+
+      <ul>
+        <li>View &gt; Developer &gt; Developer Tools</li>
+        <li>Click on the Hamburger Menu in the top right corner &gt; Tools &gt; Developer Tools</li>
+        <li>Command-Option-C</li>
+      </ul>
+
+      <p>Once Dev Tools is open, select <code>Elements</code></p>
+    </section>
+
+    <section>
+      <h2>Using Dev Tools</h2>
+
+      <p>Here's the thing about Dev Tools: They are fantastic to help you understand the code for web sites, but they are also very complex. Trying to learn everything about Dev Tools is probably akin to learning the vast array of features Adobe Creative Suite has.</p>
+
+      <p>You can <em>edit</em> your HTML and CSS in Dev Tools, but those changes <em>will not</em> be saved. If you refresh the page, all changes will be lost.</p>
+
+      <p>Think of Dev Tools as a feature that can help you learn what the different HTML elements do, how different CSS properties display and as a debugging tool. As you become more comfortable with web basics, you may want to learn more about how you can intergrate Dev Tools into your workflow.</p>
+    </section>
+
+  </body>
+</html>
