@@ -1,0 +1,115 @@
+body {
+  font-size: 16px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: #222; 
+  /* Why not black (#000)? Sometimes a dark shade of gray is easier on
+     the eyes! This is a matter of personal preference, honestly. */ 
+}
+
+a {
+  color: #0242B1; 
+  /* This uses a hexidecimal value */
+}
+
+a:hover {
+  color: rgb(208, 46, 39); 
+  /* This uses an rgb value */
+}
+
+a:active {
+  color: rgba(208, 46, 39, 0.75); 
+  /* This is an rgba value; the 'a' specifies an 'alpha channel,' */
+}
+
+h1, 
+h2, 
+h3, 
+h4 {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+nav {
+  font-weight: bold;
+}
+
+time {
+  font-style: italic;
+}
+
+abbr {
+  border-bottom: 1px dotted #999; 
+  /* Remember, some properties allow you to use 'shorthand' values! */
+}
+
+abbr:hover {
+  background: #ddd;
+}
+
+table {
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-collapse: collapse; 
+}
+
+table th, 
+table td
+ {
+  text-align: left;
+  width: 10em;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+figcaption {
+  font-size: smaller;
+}
+
+ol {
+  color: #fff;
+  width: 15em;
+}
+
+ol li span {
+  font-size: smaller;
+}
+
+/* Some new CSS3 features have not been fully implemented using a 
+   recommended standard. This is why we use 'browser prefixes.'
+   But hopefully, one day, we can shed those prefixes when browser
+   makers get the standard working properly.
+
+   In the meantime, it is okay to use tools to help implement cool
+   CSS3 features, like we've done here with a background gradient.
+
+   One source for helping generate this code is:
+
+   http://www.cssmatic.com/gradient-generator */
+
+ol#obama {
+  background: #0255a3;
+  background: -moz-linear-gradient(top, #0255a3 0%, #238ffa 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #0255a3), color-stop(100%, #238ffa));
+  background: -webkit-linear-gradient(top, #0255a3 0%, #238ffa 100%);
+  background: -o-linear-gradient(top, #0255a3 0%, #238ffa 100%);
+  background: -ms-linear-gradient(top, #0255a3 0%, #238ffa 100%);
+  background: linear-gradient(to bottom, #0255a3 0%, #238ffa 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0255a3', endColorstr='#238ffa', GradientType=0 );
+}
+
+ol#romney {
+  background: #d02d27;
+  background: -moz-linear-gradient(top, #d02d27 0%, #fa5c4d 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #d02d27), color-stop(100%, #fa5c4d));
+  background: -webkit-linear-gradient(top, #d02d27 0%, #fa5c4d 100%);
+  background: -o-linear-gradient(top, #d02d27 0%, #fa5c4d 100%);
+  background: -ms-linear-gradient(top, #d02d27 0%, #fa5c4d 100%);
+  background: linear-gradient(to bottom, #d02d27 0%, #fa5c4d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d02d27', endColorstr='#fa5c4d', GradientType=0 );
+}
+
+
+/* The following style appears on the candidate pages */
+
+#candidate img {
+  border: 1px solid #ccc;
+}
