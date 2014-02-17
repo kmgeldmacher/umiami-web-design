@@ -1,0 +1,96 @@
+body {
+  /* We're applying a margin to our page. */
+  margin: 3em;
+
+  /* And applying some basic font styles to make our page look a little
+     nicer */
+
+  color: #222;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+}
+
+section#moon-landing {
+
+  /* Why a width of 400px? That is the size of our photo. When we apply
+     margin and padding, the containing element - - in this case, 
+     section - - will adjust accordingly. */
+
+  width: 400px;
+
+  /* We want vertical spacing of 2em between our section and no 
+     horizontal spacing. */
+  margin: 2em 0;
+
+  /* Applying padding of 2em to the top, right and left sides and 
+     padding of 3em to the bottom to give it a bit of a Polaroid feel. 
+     (Who wouldn't take a Polaroid on the moon?!) */
+
+  padding: 2em 2em 2.5em 2em;
+
+  /* And now we apply the border to complete the look. */
+
+  border: 1px solid #333;
+
+}
+
+img {
+  /* We're framing our image with a subtle border */
+  border: 1px solid #666;
+
+  /* We're setting image dimensions */
+  width: 400px;
+  height: 326px;
+}
+
+blockquote {
+  /* The blockquote element adds a big margin by default. Maybe we
+     don't want it to look that way. But it is a quote, so we should be
+     using this element to /describe/ our content. 
+
+     We can always overwrite browser defaults with CSS. Let's modify
+     the blockquote's margin.
+
+  */
+
+  margin: 0;
+  margin-top: 1em;
+
+  /*  What we've done here is reset the margin to 0 and then applied the
+     margin we want. We could have also done it the shorthand way:
+
+     margin: 1em 0 0 0;
+  
+     The shorthand way is probably better. (But I wanted to demonstrate
+     that it is possible to reset default browser styles and rewrite 
+     them - - as you might have learned from this example, if you have
+     properties that are the same, the one lower in the document takes
+     precedence!
+  */
+
+  text-align: right;
+  font-size: smaller;
+
+}
+
+blockquote em { 
+  /* Many quotes are left-aligned, but the citation is right aligned. 
+     We wanted to emphasize Mr. Armstrong's quote, because, well, 
+     that's a pretty big deal. But how do we get the quote left 
+     aligned?
+
+     First, we turn it into a block element because inline elements 
+     (as em is) are not receptive to the text-align property. 
+     Then we apply our alignment.
+  */
+  
+  display: block;
+  text-align: left;
+
+  /* Just making the font a little bigger to take up a bit more white
+     space. And adding some margin to the bottom of the quote. */
+
+  font-family: cursive;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
